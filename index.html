@@ -100,12 +100,35 @@
 <li>各智能体认为环境固定（但实际上非稳态）。</li>
 </ul>
 <p>数学模型</p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012214119094.png" alt="image-20251012214119094"></p>
+<p>多智能体中原有最优目标已经没有了，如果都去最大化，可能得不到最好的结果；</p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012214737019.png" alt="image-20251012214737019"></p>
+<p>引入任何形式均衡解，来刻画得到的目标，满足agent一定行为下的理性；</p>
+<p>对于MARL，MADRL这些概念重要吗？</p>
+<p>只能作参考，引入均衡解，目前来看在MADRL中并非最重要的；</p>
+<p>博弈论的假设十分严格；</p>
+<p>学习目标：</p>
+<p>均衡是一个，还有呢？</p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012215018043.png" alt="image-20251012215018043"></p>
+<p>MARL是答案还是问题？争议</p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012215232582.png" alt="image-20251012215232582"></p>
+<p>为什么关注均衡？</p>
+<p>深度多智能体强化学习，这个均衡解不太重要了；</p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012215259912.png" alt="image-20251012215259912"></p>
+<p>学到行为之前没有任何指导；</p>
+<p>虽然，但是可以做的问题</p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012215426686.png" alt="image-20251012215426686"></p>
+<p>虽然在MDP上，基于了观测和所有其他agent的行为，但是如果按照这个图，只要不是通道处，其实可以不关注；</p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012220102489.png" alt="image-20251012220102489"></p>
+<h3 id="Deep-MARL"><a href="#Deep-MARL" class="headerlink" title="Deep MARL"></a>Deep MARL</h3><p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012220412087.png" alt="image-20251012220412087"></p>
+<p>CTDE</p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012220525560.png" alt="image-20251012220525560"></p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012220807578.png" alt="image-20251012220807578"></p>
+<p>QMIX很多情况下表现还不错，比加法假设更加合理；</p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251012220839012.png" alt="image-20251012220839012"></p>
+<p>基于policy的经典算法MADDPG</p>
+<p>基于Advantage 函数</p>
+<p><img src="C:\Users\zhuy\AppData\Roaming\Typora\typora-user-images\image-20251013135131068.png" alt="image-20251013135131068"></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: [Deployment](<a target="_blank" rel="noopener" href="https://hexo.io/docs/one-comm">https://hexo.io/docs/one-comm</a></p>
@@ -114,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/10/11/RL/" data-id="cuid-CfzAGrVnTZtFnMJEc_2q" data-title="Multi-Agent RL 学习" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/10/11/RL/" data-id="cuid3xcpVqyRifqVKY8egTRhQ" data-title="Multi-Agent RL 学习" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -165,7 +188,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/10/11/hello-world/" data-id="cuidl-hS_I2R95WH38aTF3vTU" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/10/11/hello-world/" data-id="cuid87Nu1iXF8TifXtFehtFVw" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
